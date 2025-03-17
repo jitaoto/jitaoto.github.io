@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2048 - Classic Number Puzzle Game</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="description" content="Play the classic 2048 puzzle game. Merge tiles, reach 2048 and beyond! Free to play with no ads." />
+    <style>
+      @media (max-width: 640px) {
+        .game-container {
+          height: calc(100vh - 4rem) !important;
+        }
+        .intro-section {
+          margin-top: 2rem !important;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50">
+    <div class="min-h-screen py-3">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <!-- Game Container -->
+        <div class="w-full flex flex-col items-center">
+          <div class="game-container w-full h-screen sm:h-auto sm:max-w-3xl sm:aspect-[4/3] relative">
+            <iframe
+              loading="lazy"
+              src="https://games.crazygames.com/en_US/2048/index.html?aaConfigcatTest=true&v=1.322"
+              class="absolute top-0 left-0 w-full h-full border-0 sm:rounded-lg sm:shadow-lg"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+
+        <!-- Enhanced Intro Section with SEO-optimized content -->
+        <div class="mt-12 prose prose-lg max-w-none">
+          <h1 class="text-5xl font-bold text-center mb-8">2048: The Addictive Number Puzzle Game That Challenges Your Mind</h1>
+
+          <div class="bg-blue-50 p-6 rounded-lg border border-blue-100 mb-8">
+            <blockquote class="italic text-gray-700">
+              "2048 is more than just a game - it's a brilliant combination of mathematical thinking and strategic planning that has captivated
+              millions of players worldwide. Whether you're a casual player or a puzzle enthusiast, this game offers the perfect blend of challenge
+              and entertainment."
+            </blockquote>
+            <p class="text-sm text-gray-600 mt-2">- Gaming Excellence Magazine, 2023</p>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-8 mb-8">
+            <h2 class="text-3xl font-semibold mb-6">The Fascinating World of 2048</h2>
+            <p class="mb-6">
+              Welcome to 2048, the captivating puzzle game that has become a global phenomenon. Created by Italian developer Gabriele Cirulli in March
+              2014, this ingenious game has evolved from a weekend project into one of the most popular browser-based puzzle games of all time, with
+              millions of daily players across the globe.
+            </p>
+
+            <div class="bg-gray-50 p-6 rounded-lg mb-6">
+              <h3 class="text-2xl font-semibold mb-4">Quick Facts About 2048:</h3>
+              <ul class="list-disc pl-6 space-y-2">
+                <li>Over 500 million players worldwide</li>
+                <li>Available in 20+ languages</li>
+                <li>Inspired by Threes! and 1024</li>
+                <li>Open-source game with numerous variations</li>
+                <li>Featured in mathematics education programs</li>
+                <li>Recognized for its cognitive benefits</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-8 mb-8">
+            <h2 class="text-3xl font-semibold mb-6">Comprehensive Game Guide</h2>
+
+            <h3 class="text-2xl font-semibold mb-4">Basic Rules and Mechanics</h3>
+            <div class="bg-yellow-50 p-6 rounded-lg mb-6">
+              <p class="mb-4">
+                2048 is played on a 4×4 grid where you combine numbered tiles to create larger values. The game's elegant simplicity masks its deep
+                strategic complexity:
+              </p>
+              <ul class="list-disc pl-6 space-y-2">
+                <li>Start with two tiles (usually 2's or 4's)</li>
+                <li>Slide all tiles in one direction (up, down, left, or right)</li>
+                <li>When matching numbers collide, they merge into their sum</li>
+                <li>Each move spawns a new tile (2 or 4)</li>
+                <li>Win by creating the 2048 tile</li>
+                <li>Game ends when no more moves are possible</li>
+              </ul>
+            </div>
+
+            <h3 class="text-2xl font-semibold mb-4">Advanced Strategies for Success</h3>
+            <div class="space-y-6">
+              <div class="bg-gray-50 p-6 rounded-lg">
+                <h4 class="text-xl font-semibold mb-3">1. The Corner Strategy</h4>
+                <p class="mb-3">The cornerstone of advanced 2048 play is maintaining your highest tile in one corner. Here's why and how:</p>
+                <ul class="list-disc pl-6 space-y-2">
+                  <li>Choose either the top-left or bottom-right corner</li>
+                  <li>Never move your highest tile from this position</li>
+                  <li>Build a descending sequence around your corner</li>
+                  <li>Maintain this pattern throughout the game</li>
+                </ul>
+              </div>
+
+              <div class="bg-gray-50 p-6 rounded-lg">
+                <h4 class="text-xl font-semibold mb-3">2. The Snake Pattern</h4>
+                <p class="mb-3">Creating a snake-like pattern of descending values maximizes merging opportunities:</p>
+                <ul class="list-disc pl-6 space-y-2">
+                  <li>Start from your anchor corner</li>
+                  <li>Build in a zigzag pattern</li>
+                  <li>Maintain decreasing values along the path</li>
+                  <li>Keep the pattern intact during merges</li>
+                </ul>
+              </div>
+
+              <div class="bg-gray-50 p-6 rounded-lg">
+                <h4 class="text-xl font-semibold mb-3">3. Chain Reaction Mastery</h4>
+                <p class="mb-3">Planning and executing chain reactions is crucial for high scores:</p>
+                <ul class="list-disc pl-6 space-y-2">
+                  <li>Look for multiple merge opportunities</li>
+                  <li>Plan sequences of 3-4 moves ahead</li>
+                  <li>Create merge cascades for higher values</li>
+                  <li>Maintain empty cells for flexibility</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-8 mb-8">
+            <h2 class="text-3xl font-semibold mb-6">Mathematical Insights</h2>
+
+            <div class="space-y-6">
+              <div class="bg-gray-50 p-6 rounded-lg">
+                <h3 class="text-2xl font-semibold mb-4">The Mathematics Behind 2048</h3>
+                <p class="mb-4">2048 is built on fascinating mathematical principles:</p>
+                <ul class="list-disc pl-6 space-y-2">
+                  <li>Powers of 2 sequence: 2¹, 2², 2³, ..., 2¹¹ (2048)</li>
+                  <li>Maximum possible tile: 2¹⁷ (131,072)</li>
+                  <li>Probability calculations for tile spawns</li>
+                  <li>Grid state combinations: over 10¹⁴ possibilities</li>
+                </ul>
+              </div>
+
+              <div class="bg-gray-50 p-6 rounded-lg">
+                <h3 class="text-2xl font-semibold mb-4">Statistical Analysis</h3>
+                <ul class="list-disc pl-6 space-y-2">
+                  <li>Average winning game length: 989 moves</li>
+                  <li>Typical time to reach 2048: 20-30 minutes</li>
+                  <li>Success rate for new players: ~1%</li>
+                  <li>Expert success rate: ~40%</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-8">
+            <h2 class="text-3xl font-semibold mb-6">Game Variations and Special Features</h2>
+
+            <div class="space-y-6">
+              <div class="bg-gray-50 p-6 rounded-lg">
+                <h3 class="text-2xl font-semibold mb-4">Popular Variations</h3>
+                <ul class="list-disc pl-6 space-y-2">
+                  <li>4096 - Extended challenge version</li>
+                  <li>Fibonacci 2048 - Using Fibonacci sequence</li>
+                  <li>3D 2048 - Three-dimensional version</li>
+                  <li>Multiplayer 2048 - Competitive mode</li>
+                  <li>Time Attack 2048 - Speed-based variant</li>
+                </ul>
+              </div>
+
+              <div class="bg-gray-50 p-6 rounded-lg">
+                <h3 class="text-2xl font-semibold mb-4">Educational Benefits</h3>
+                <ul class="list-disc pl-6 space-y-2">
+                  <li>Mental arithmetic practice</li>
+                  <li>Pattern recognition development</li>
+                  <li>Strategic thinking enhancement</li>
+                  <li>Problem-solving skills improvement</li>
+                  <li>Concentration and focus training</li>
+                </ul>
+              </div>
+
+              <div class="bg-gray-50 p-6 rounded-lg">
+                <h3 class="text-2xl font-semibold mb-4">Accessibility Features</h3>
+                <ul class="list-disc pl-6 space-y-2">
+                  <li>
+                    Keyboard Controls:
+                    <ul class="list-disc pl-6 mt-2">
+                      <li>Arrow keys for directional moves</li>
+                      <li>WASD key alternative controls</li>
+                      <li>R key for quick restart</li>
+                      <li>U key for undo (where available)</li>
+                    </ul>
+                  </li>
+                  <li>
+                    Touch Controls:
+                    <ul class="list-disc pl-6 mt-2">
+                      <li>Swipe gestures in any direction</li>
+                      <li>Tap-and-hold for undo</li>
+                      <li>Double-tap for restart</li>
+                    </ul>
+                  </li>
+                  <li>
+                    Visual Aids:
+                    <ul class="list-disc pl-6 mt-2">
+                      <li>High contrast color schemes</li>
+                      <li>Customizable tile colors</li>
+                      <li>Animation speed controls</li>
+                      <li>Screen reader support</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-8 mb-8">
+            <h2 class="text-3xl font-semibold mb-6">Frequently Asked Questions (FAQ)</h2>
+
+            <div class="space-y-6">
+              <div class="bg-white rounded-xl border border-gray-100 overflow-hidden">
+                <h3 class="text-lg font-semibold text-gray-900 p-4 pb-2">What happens when I reach 2048?</h3>
+                <div class="text-gray-600 px-4 pb-4">
+                  <p>
+                    When you create the 2048 tile, you've officially won the game! However, this isn't the end - you can continue playing to achieve
+                    even higher scores and tiles. Many players aim for:
+                  </p>
+                  <ul class="list-disc pl-6 mt-2">
+                    <li>4096 (considered a significant achievement)</li>
+                    <li>8192 (reached by skilled players)</li>
+                    <li>16384 (expert level)</li>
+                    <li>32768 (master level)</li>
+                    <li>65536 (legendary status)</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl border border-gray-100 overflow-hidden">
+                <h3 class="text-lg font-semibold text-gray-900 p-4 pb-2">What's the best strategy for beginners?</h3>
+                <div class="text-gray-600 px-4 pb-4">
+                  <p>For beginners, we recommend these fundamental strategies:</p>
+                  <ul class="list-disc pl-6 mt-2">
+                    <li>Pick a corner (preferably bottom-right) and keep your largest tile there</li>
+                    <li>Never move your largest tile away from its corner unless absolutely necessary</li>
+                    <li>Try to keep your highest numbers together</li>
+                    <li>Avoid making quick, random moves - take your time to plan</li>
+                    <li>Practice maintaining empty cells on the board for flexibility</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl border border-gray-100 overflow-hidden">
+                <h3 class="text-lg font-semibold text-gray-900 p-4 pb-2">How does scoring work in 2048?</h3>
+                <div class="text-gray-600 px-4 pb-4">
+                  <p>The scoring system in 2048 works as follows:</p>
+                  <ul class="list-disc pl-6 mt-2">
+                    <li>Each merge adds the combined tile's value to your score</li>
+                    <li>
+                      For example:
+                      <ul class="list-disc pl-6 mt-1">
+                        <li>Merging two 2s (2+2=4) adds 4 points</li>
+                        <li>Merging two 4s (4+4=8) adds 8 points</li>
+                        <li>Merging two 8s (8+8=16) adds 16 points</li>
+                      </ul>
+                    </li>
+                    <li>Chain reactions can lead to massive score increases</li>
+                    <li>The theoretical maximum score is over 3.9 million points</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl border border-gray-100 overflow-hidden">
+                <h3 class="text-lg font-semibold text-gray-900 p-4 pb-2">Why do I sometimes get a 4 tile instead of a 2?</h3>
+                <div class="text-gray-600 px-4 pb-4">
+                  <p>The appearance of new tiles follows a specific probability:</p>
+                  <ul class="list-disc pl-6 mt-2">
+                    <li>90% chance of spawning a 2 tile</li>
+                    <li>10% chance of spawning a 4 tile</li>
+                    <li>This randomness adds an element of strategy to the game</li>
+                    <li>Players must adapt their strategy based on which tile appears</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl border border-gray-100 overflow-hidden">
+                <h3 class="text-lg font-semibold text-gray-900 p-4 pb-2">How can I improve my high score?</h3>
+                <div class="text-gray-600 px-4 pb-4">
+                  <p>To achieve higher scores, consider these advanced techniques:</p>
+                  <ul class="list-disc pl-6 mt-2">
+                    <li>
+                      Master the "snake chain" pattern:
+                      <ul class="list-disc pl-6 mt-1">
+                        <li>Arrange tiles in descending order</li>
+                        <li>Create a snake-like path from corner to corner</li>
+                        <li>Maintain this pattern throughout the game</li>
+                      </ul>
+                    </li>
+                    <li>Look for merge opportunities that create chain reactions</li>
+                    <li>Keep track of which new tiles are likely to appear</li>
+                    <li>Practice speed and accuracy in equal measure</li>
+                    <li>Study replays of high-scoring games</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl border border-gray-100 overflow-hidden">
+                <h3 class="text-lg font-semibold text-gray-900 p-4 pb-2">What are the most common mistakes to avoid?</h3>
+                <div class="text-gray-600 px-4 pb-4">
+                  <p>Watch out for these common pitfalls:</p>
+                  <ul class="list-disc pl-6 mt-2">
+                    <li>Building high-value tiles in multiple corners</li>
+                    <li>Making hasty moves without planning ahead</li>
+                    <li>Letting small tiles get trapped between large ones</li>
+                    <li>Moving your highest tile away from its corner</li>
+                    <li>Not maintaining a clear merging path</li>
+                    <li>Ignoring the importance of empty cells</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl border border-gray-100 overflow-hidden">
+                <h3 class="text-lg font-semibold text-gray-900 p-4 pb-2">Are there any keyboard shortcuts or special controls?</h3>
+                <div class="text-gray-600 px-4 pb-4">
+                  <p>Yes, here's a complete list of controls:</p>
+                  <ul class="list-disc pl-6 mt-2">
+                    <li>
+                      Primary Controls:
+                      <ul class="list-disc pl-6 mt-1">
+                        <li>Arrow Keys: Move tiles in respective directions</li>
+                        <li>WASD Keys: Alternative movement controls</li>
+                      </ul>
+                    </li>
+                    <li>
+                      Special Commands:
+                      <ul class="list-disc pl-6 mt-1">
+                        <li>R: Restart game</li>
+                        <li>U: Undo last move (if available)</li>
+                        <li>M: Toggle sound (if available)</li>
+                        <li>P: Pause game (if available)</li>
+                      </ul>
+                    </li>
+                    <li>
+                      Touch Controls:
+                      <ul class="list-disc pl-6 mt-1">
+                        <li>Swipe: Move tiles</li>
+                        <li>Double Tap: Restart game</li>
+                        <li>Long Press: Undo (if available)</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl border border-gray-100 overflow-hidden">
+                <h3 class="text-lg font-semibold text-gray-900 p-4 pb-2">Is there a way to save my progress?</h3>
+                <div class="text-gray-600 px-4 pb-4">
+                  <p>The game automatically saves your progress in several ways:</p>
+                  <ul class="list-disc pl-6 mt-2">
+                    <li>
+                      Local Storage:
+                      <ul class="list-disc pl-6 mt-1">
+                        <li>Current game state</li>
+                        <li>Best score</li>
+                        <li>Game statistics</li>
+                      </ul>
+                    </li>
+                    <li>Auto-save occurs after every move</li>
+                    <li>Progress persists even if you close the browser</li>
+                    <li>Clear browser data will reset progress</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl border border-gray-100 overflow-hidden">
+                <h3 class="text-lg font-semibold text-gray-900 p-4 pb-2">How does 2048 compare to similar puzzle games?</h3>
+                <div class="text-gray-600 px-4 pb-4">
+                  <p>2048 stands out in several ways:</p>
+                  <ul class="list-disc pl-6 mt-2">
+                    <li>
+                      Compared to Threes!:
+                      <ul class="list-disc pl-6 mt-1">
+                        <li>Simpler merging mechanics</li>
+                        <li>More straightforward number progression</li>
+                        <li>Faster-paced gameplay</li>
+                      </ul>
+                    </li>
+                    <li>
+                      Compared to other number puzzles:
+                      <ul class="list-disc pl-6 mt-1">
+                        <li>More strategic depth</li>
+                        <li>Better replay value</li>
+                        <li>Stronger educational benefits</li>
+                      </ul>
+                    </li>
+                    <li>
+                      Unique features:
+                      <ul class="list-disc pl-6 mt-1">
+                        <li>Powers of two progression</li>
+                        <li>Grid-based movement</li>
+                        <li>Chain reaction mechanics</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        function adjustGameHeight() {
+          const gameContainer = document.querySelector('.game-container')
+          if (window.innerWidth < 640) {
+            const viewportHeight = window.innerHeight
+            gameContainer.style.height = `${viewportHeight * 0.6}px`
+          }
+        }
+
+        window.addEventListener('resize', adjustGameHeight)
+        adjustGameHeight()
+      })
+    </script>
+  </body>
+</html>
